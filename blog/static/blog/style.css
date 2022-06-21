@@ -1,4 +1,4 @@
-.title-name{
+.title-name {
     font-size: 28px;
     font-weight: bold;
     color: #000;
@@ -9,18 +9,20 @@
     font-size: 20px;
     background-color: lightblue;
 }
-.home-container-body{
+
+.home-container-body {
     position: fixed;
     left: 20%;
     top: 30%;
-    width: 50%;
-    
 }
-.point-list{
+
+
+.point-list {
     gap: 10px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
+
 .container {
     border-radius: 20px;
 }
@@ -59,9 +61,10 @@
     box-shadow: 0 16px 48px #E3E7EB;
 }
 
-.post-body{
+.post-body {
     margin-top: 16px;
-    height: 'screen';}
+    height: 'screen';
+}
 
 .card-text {
     font-size: 14px;
@@ -73,7 +76,7 @@
 
 .card-text-content {
     font-size: 18px;
-    height:78vh;
+    height: 78vh;
 }
 
 #content-preview {
@@ -81,18 +84,34 @@
     font-weight: regular;
 }
 
-.project-row{
-    height: 100vh;  
+.project-row {
+    height: 100vh;
 }
 
-.post-body{
+.post-body {
     background-color: white;
 }
 
-.content-block{
+.content-block {
     height: 85vh;
 }
 
-.project-card{
+.project-card {
     border-radius: 20px;
+}
+
+.footer{
+    gap: 50px;
+}
+
+.grid-container {
+    display: grid;
+    background-color: blueviolet;
+    }
+.grid-item-1{
+    background-color: red;
+    width: 50%;
+}
+.grid-item-2{
+    background-color: blue;
 }

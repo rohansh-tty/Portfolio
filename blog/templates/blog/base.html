@@ -35,22 +35,36 @@
                         <li class="nav-item text-black">    
                             <a class="nav-link text-black font-weight-bold" href="{% url 'pow' %}">PoW</a>
                         </li>
-                        {% comment %} <li class="nav-item text-black">
+                        <li class="nav-item text-black">
                             <a class="nav-link text-black font-weight-bold" href="{% url 'meme' %}">Memes</a>
-                        </li> {% endcomment %}
+                        </li>   
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="content-block">
         {% block content %}
-        <!-- Content Goes here -->
         {% endblock content %}
         </div>
 
-        <!-- Footer -->
-        <footer class="py-3 bg-grey">
-            <p class="m-0 text-dark text-center ">No Copyright &copy; Rohan Shetty</p>
-        </footer>
+       
+        <footer class="page-footer font-small blue">
+            <div class>
+                
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">No Copyright © Rohan Shetty:
+                <a href="#"><img id="logo" width="40" height="40" src="{% static 'blog/assets/reddit.png' %}"><a>
+                    <a href="#"><img id="logo" width="40" height="40" src="{% static 'blog/assets/github.png' %}"><a>
+                    <a href="#"><img id="logo" width="40" height="40" src="{% static 'blog/assets/linkedin.png' %}"><a>
+                    <a href="#"><img id="logo" width="40" height="40" src="{% static 'blog/assets/twitterlogo.png' %}"><a>
+            </div>
+            <!-- Copyright -->
+          
+          </footer>
+        
+
+            
     </body>
 </html>

@@ -21,10 +21,10 @@ def home_view(request):
     return render(request, 'blog/home.html')
 
 def meme_view(request):
-    return render(request, 'blog/meme.html', {'memes': memes})
+    return render(request, 'blog/fourofour.html')
 
 def pow_view(request):
-    return render(request, 'blog/pow.html')
+    return render(request, 'blog/fourofour.html')
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
