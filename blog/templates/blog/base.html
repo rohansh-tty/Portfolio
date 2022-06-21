@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title id="title">Rohan Shetty</title>
+        <title class="title-name">Rohan Shetty</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <meta name="google" content="notranslate" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
     </head>
 
-    <body>
+    <body class="hero">
         
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav">
@@ -27,18 +27,27 @@
                             <a class="nav-link text-black font-weight-bold" href="{% url 'about' %}">About</a>
                         </li>
                         <li class="nav-item text-black">
-                            <a class="nav-link text-black font-weight-bold" href="#">Projects</a>
+                            <a class="nav-link text-black font-weight-bold" href="{% url 'blog' %}">Blog</a>
                         </li>
-                        <li class="nav-item text-black">
-                            <a class="nav-link text-black font-weight-bold" href="#">MyMemes</a>
+                        <li class="nav-item text-black">    
+                            <a class="nav-link text-black font-weight-bold" href="{% url 'project' %}">Projects</a>
                         </li>
+                        <li class="nav-item text-black">    
+                            <a class="nav-link text-black font-weight-bold" href="{% url 'pow' %}">PoW</a>
+                        </li>
+                        {% comment %} <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="{% url 'meme' %}">Memes</a>
+                        </li> {% endcomment %}
                     </ul>
                 </div>
             </div>
         </nav>
+        <div class="content-block">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
+        </div>
+
         <!-- Footer -->
         <footer class="py-3 bg-grey">
             <p class="m-0 text-dark text-center ">No Copyright &copy; Rohan Shetty</p>
